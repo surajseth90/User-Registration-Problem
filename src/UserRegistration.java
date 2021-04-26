@@ -5,6 +5,7 @@ public class UserRegistration {
 			LastName.lastName();
 			Email.email();
 			MobileNumber.mobileNumber();
+			Password.password();
 	}
 }
 	
