@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Password {
-	private static final String passwordCondition = "(?=.*[A-Z])[A-Za-z]{8,}";
+	private static final String passwordCondition = "(?=.*\\d)(?=.*[A-Z])[A-Za-z]{8,}";
 		
 	public static void password() {
 		Scanner scanner = new Scanner(System.in);
@@ -12,7 +12,9 @@ public class Password {
 			System.out.println();
 		else {
 			System.out.println("Invalid Input : Please Enter in a proper format "+"\n"
-					+ "eg. minimum 8 characters and altleast 1 upper case character ");
+					+ " minimum 8 characters ,"+"\n"
+					+ " atleast 1 upper case character , "+"\n"
+					+ " atleast 1 numeric number ");
 			Password.password();
 		}
 	}	
