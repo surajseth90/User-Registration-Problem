@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Password {
-	private static final String passwordCondition = "[A-Za-z]{8,}";
+	private static final String passwordCondition = "[A-Z][A-Za-z]{7,}";
 		
 	public static void password() {
 		Scanner scanner = new Scanner(System.in);
@@ -11,7 +11,8 @@ public class Password {
 		if(CheckCondition.checkCondition(password,passwordCondition))
 			System.out.println();
 		else {
-			System.out.println("Invalid Input : Please Enter in a proper format ,eg. minimum 8 characters ");
+			System.out.println("Invalid Input : Please Enter in a proper format "+"\n"
+					+ "eg. minimum 8 characters and altleast 1 upper case character ");
 			Password.password();
 		}
 	}	
