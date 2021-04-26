@@ -4,6 +4,7 @@ public class UserRegistration {
 			FirstName.firstName();
 			LastName.lastName();
 			Email.email();
+			MobileNumber.mobileNumber();
 	}
 }
 	
