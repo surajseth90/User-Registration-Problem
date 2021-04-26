@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
 public class FirstName {
+	private static final String firstNameCondition = "[A-Z][a-z]{3,}";
+	
 	public static String firstName() {
 		Scanner scanner = new Scanner(System.in);
-		String firstNameCondition = "[A-Z][a-z]{3,}";
 		System.out.println("Enter your first name : ");
 		String firstName = scanner.nextLine();
 		CheckCondition.checkCondition(firstName,firstNameCondition);

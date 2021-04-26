@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
 public class LastName {
-
+	private static final String lastNameCondition = "[A-Z][a-z]{3,}";
+	
 	public static String lastName() {
 		Scanner scanner = new Scanner(System.in);
-		String lastNameCondition = "[A-Z][a-z]{3,}";
+		
 		System.out.println("Enter your last name : ");
 		String lastName = scanner.nextLine();
 		CheckCondition.checkCondition(lastName,lastNameCondition);
