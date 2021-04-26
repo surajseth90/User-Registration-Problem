@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Password {
-	private static final String passwordCondition = "[A-Z][A-Za-z]{7,}";
+	private static final String passwordCondition = "(?=.*[A-Z])[A-Za-z]{8,}";
 		
 	public static void password() {
 		Scanner scanner = new Scanner(System.in);
